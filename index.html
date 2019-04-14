@@ -1,122 +1,160 @@
 <html>
+
 <head>
-    <meta charset="utf-8" />
-      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-    <title> Projeto </title>
-    
-<!-- Link direto para meu projeto no github -->
-    <link rel="stylesheet" type="text/css" href="lib/semantic/out/semantic.min.css">
-  <link rel="stylesheet" type="text/css" href="css/main.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <script
-      src="https://code.jquery.com/jquery-3.1.1.min.js"
-      integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-      crossorigin="anonymous"></script>
+    <title> Portofolio </title>
 
-    
-<!--- Semantic -->
-      <script src="lib/semantic/out/semantic.min.js"></script>
-    
-<!--- D3 -->
-      <script src="https://d3js.org/d3.v4.min.js"></script>
+    <!-- Link direto para meu projeto no github -->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
 
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
 
-<!--- Tableau -->
-<script src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
-<script src="lib/tableau.js"></script>
+    <!--- Bootsrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!--- Tableau -->
+    <script src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
+    <script src="lib/tableau.js"></script>
+
+    <!--- JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 </head>
-  
-<body onload="initVizIndex();">
-  <!-- HEADER -->
-  <!--<div class="ui fixed red inverted menu">-->
-    <div class="ui stackable container menu"> <!-- Inicia menu -->
-      <!-- Imagem -->
-      <div class="item">
-          <a href="http://www.ufpb.br" class="ui mini image"><img src="image/ufpb_logo.png"></a>
-      </div><!-- Fim imagem -->
 
-        <a href="index.html" class="item" style="color: #222831;">Página Inicial</a>
-        <a href="participa.html" class="transition item" style="color: #222831;"> Participação <i class="users icon"></i></a>  
-        <a href="desempenho.html" class="transition item" style="color: #222831;"> Desempenho <i class="trophy icon"></i></a> 
-        <a href="mapa.html" class="transition item" style="color: #222831;"> Mapa <i class="map icon"></i></a> 
-        <a href="envolvidos.html" class="transition item" style="color: #222831;"> Envolvidos</a> 
+<body>
+    <!-- HEADER -->
+    <!-- Inicia menu -->
 
-    </div> <!-- Fecha menu -->
+    <blockquote class="blockquote text-center">
+        <h1 style="color:#222831;">Rodrigo Augusto</h1>
+        <img src="image/rodrigo.jpg" alt="profile" class="bd-placeholder-img rounded-circle" width="150" height="150">
+    </blockquote>
 
-  <!-- Meio -->
-  <div class="ui main text container"> <!-- Abre container principal -->
-      <h1 class="ui header" style="color:#222831;" >Gênero</h1>
-      <!-- Informacao -->
-      <div class="ui grid" style="color:#222831;">
-        <div class="seven wide column">
-          <p>Problemas relacionados a gênero afetam instituições que são base para a sociedade, 
-          como universidades e empresas, pensando nisso, e tendo em vista a importância da 
-          universidade como modelo social, são apresentadas aqui visualizações
-           gráficas para demonstrar a desigualdade de gênero dentro da Universidade
-            Federal da Paraíba (UFPB) nos cursos do Centro de Informática (CI):
-        <div class="ui list">
-  		<div class="item">
-    		<div class="content">
-      	<a class="header">Engenharia de Computação</a>
-    		</div>
-  		</div>
-  		<div class="item">
-    		<div class="content">
-      		<a class="header">Ciência da Computação</a>
-    		</div>
-  		</div>
-    	<div class="item">
-    		<div class="content">
-      		<a class="header">Matemática Computacional</a>
-    		</div>
-  		</div>
-		</div>
-		
-        </p>
+    <!-- Meio -->
+    <div class="ui main text container">
+        <br>
+
+        <div class="container marketing bg-3 text-center">
+            <h3 class="margin">Quem Sou Eu?</h3>
+            <br>
+            <!-- Three columns of text below the carousel -->
+            <div class="row">
+
+                <!-- /.col-lg-4 -->
+                <div class="col-lg-4">
+                    <img src="image/educacao.png" alt="profile" class="bd-placeholder-img rounded-circle" width="140" height="140">
+
+                    <h4>Educação</h4>
+                    <ul type="square">
+                        <li>2015 – 2016 Graduação Sanduiche Engenharia de Computação - State University of New Paltz - Programa Ciências Sem Fronteiras</li>
+                        <li>2012- 2018 Graduado em Engenharia de Computação - Universidade Federal da Paraíba</li>
+                    </ul>
+
+                </div>
+
+                <!-- /.col-lg-4 -->
+                <div class="col-lg-4">
+                    <img src="image/medalha.png" alt="profile" class="bd-placeholder-img rounded-circle" width="140" height="140">
+                    <h4>Experiência</h4>
+                    <ul type="square">
+                        <li>2012 - 2013 Programa "Jovens Talentos", antigo projeto do governo federal com bolsas para a introdução de alunos à pesquisa. Trabalhei com conceitos básicos de análise de redes sociais.</li>
+                        <li>2014 - 2015 Professor voluntário de robótica em projeto de preparo de alunos para participação na Robocup 2014 - João Pessoa.</li>
+                        <li>2015 Participação na conferência "X-Meeting 2015 - 11th International Conference of th AB3C + Brazilian Symposium of Bioinformatics, São Paulo" analisando a correlação entre temperatura e código genético.</li>
+                        <li>2015 - 2016 Programa "Ciência sem Fronteiras", internship ligado à bioinformática trabalhando com bancos de dados.</li>
+                        <li>Desenvolvimento da plataforma de análise de dados relacionados a desigualdade de gênero nos cursos de computação da UFPB.</li>
+                    </ul>
+
+                </div>
+
+                <!-- /.col-lg-4 -->
+                <div class="col-lg-4">
+                    <img src="image/idioma.png" alt="profile" class="bd-placeholder-img rounded-circle" width="140" height="140">
+                    <h4>Idiomas</h4>
+                    <p>
+                        <ul type="square">
+                            <li> Inglês</li>
+
+                            <li> Francês</li>
+
+                            <li> Português</li>
+
+                        </ul>
+                    </p>
+
+                </div>
+            </div>
+            <!-- Fim container marketing-->
+
+            <div class="container marketing bg-2 text-center">
+                <h3 class="margin">Projetos</h3>
+                <br>
+                <!-- Three columns of text below the carousel -->
+                <div class="row">
+                    <div class="col-lg-6">
+                        <img src="image/genero.jpg" alt="profile" class="bd-placeholder-img rounded-circle" width="140" height="140">
+
+                        <h4>Projeto Gênero Centro de Informática - UFPB</h4>
+                        <p>Problemas relacionados a gênero afetam instituições que são base para a sociedade, como universidades e empresas. Pensando nisso e tendo em vista a importância da universidade como modelo social, são apresentadas aqui visualizações interativas para demonstrar a desigualdade de gênero dentro dos cursos do Centro de Informática (CI) na Universidade Federal da Paraíba (UFPB).
+                        </p>
+                        <p><a class="btn btn-secondary" href="https://7rodrigoaugusto.github.io/generoUFPB/" role="button">Detalhes &raquo;</a></p>
+                    </div>
+                    <!-- /.col-lg-4 -->
+                    <div class="col-lg-6">
+                        <img src="image/eleicoes.png" alt="profile" class="bd-placeholder-img rounded-circle" width="140" height="140">
+                        <!--
+                    <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140">
+                        <title>Placeholder</title>
+                        <rect width="100%" height="100%" fill="#777" />
+                        <text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
+                    </svg>
+                    -->
+                        <h4>Eleições 2018 - João Pessoa</h4>
+                        <p>Mapa com a distribuição de votos, por bairro, na cidade de João Pessoa.</p>
+                        <p><a class="btn btn-secondary" href="https://public.tableau.com/profile/rodrigo4986#!/vizhome/EleiesJooPessoa/EleiesJP" role="button">Detalhes &raquo;</a></p>
+                    </div>
+                </div>
+                <!-- Fim container marketing-->
+
+                <!-- /.row -->
+
+            </div>
+            <!-- Fim do meio -->
+
         </div>
-        <div class="one wide column">
-        </div>
-        <div class="seven wide column" id="tableauVizParticipaTotal">
-        </div>
-        
-      </div>
+        <!-- Fecha container principal -->
 
-      <div class="ui grid" style="color:#222831;">
-        <div class="seven wide column">
-          <h1 class="ui header" style="color:#222831;" >Objetivo</h1>
-          <p> O propósito é apresentar uma visão da participação e desempenho 
-             dos gêneros no Centro de Informática (CI). Para que interessados realizem
-             uma análise quanto ao perfil observável dos alunos.
-        </p>
-        </div>
-        <div class="one wide column">
-        </div>
-        <div class="seven wide column">
-          <h1 class="ui header" style="color:#222831;" >Dados</h1>
-          <p> Os dados foram coletados da plataforma SIGAA-UFPB
-        </p>
-        </div>
-        
-      </div>
+        <!-- FOOTER -->
+        <footer class="container-fluid bg-3 text-center">
+            <h3 class="margin">Contato</h3> Rodrigo Augusto Vasconcelos Sarmento
+            <br>
+            <svg id="i-location" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                <circle cx="16" cy="11" r="4" />
+                <path d="M24 15 C21 22 16 30 16 30 16 30 11 22 8 15 5 8 10 2 16 2 22 2 27 8 24 15 Z" />
+            </svg> João Pessoa, PB
+            <br>
+            <svg id="i-mail" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                <path d="M2 26 L30 26 30 6 2 6 Z M2 6 L16 16 30 6" />
+            </svg> <a href="mailto: 7rodrigo.sarmento@gmail.com">7rodrigo.sarmento@gmail.com</a>
+            <br>
+            <svg id="i-telephone" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                <path d="M3 12 C3 5 10 5 16 5 22 5 29 5 29 12 29 20 22 11 22 11 L10 11 C10 11 3 20 3 12 Z M11 14 C11 14 6 19 6 28 L26 28 C26 19 21 14 21 14 L11 14 Z" />
+                <circle cx="16" cy="21" r="4" />
+            </svg><a>(83)98197-1775</a>
+            <br>
+            <a href="https://www.linkedin.com/in/rodrigo-augusto-526b53113/"> <img src="image/linkedin.png" alt="profile" class="bd-placeholder-img rounded-circle" width="40" height="40"></a>
+            <a href="https://public.tableau.com/profile/rodrigo4986#!/"> <img src="image/tableau.png" alt="profile" class="bd-placeholder-img rounded-circle" width="40" height="40"></a>
+            <a href="https://github.com/7RodrigoAugusto">
+                <svg id="i-github" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="32" height="32">
+                    <path stroke-width="0" fill="currentColor" d="M32 0 C14 0 0 14 0 32 0 53 19 62 22 62 24 62 24 61 24 60 L24 55 C17 57 14 53 13 50 13 50 13 49 11 47 10 46 6 44 10 44 13 44 15 48 15 48 18 52 22 51 24 50 24 48 26 46 26 46 18 45 12 42 12 31 12 27 13 24 15 22 15 22 13 18 15 13 15 13 20 13 24 17 27 15 37 15 40 17 44 13 49 13 49 13 51 20 49 22 49 22 51 24 52 27 52 31 52 42 45 45 38 46 39 47 40 49 40 52 L40 60 C40 61 40 62 42 62 45 62 64 53 64 32 64 14 50 0 32 0 Z" />
+                </svg>
+            </a>
 
-
-    </div>
-
-  </div> <!-- Fecha container principal -->
-
-
-  <!-- FOOTER -->
-  <div class="ui inverted vertical footer segment"> <!-- Abre container footer -->
-    <div class="ui center aligned container">
-          <div class="ui inverted section divider"></div>
-          <img src="image/ufpb_logo.png" class="ui centered mini image">
-          <div class="ui horizontal inverted small divided link list">
-            <a class="item" href="#"style = "color:fffdf6;">Site Map</a>
-            <a class="item" href="envolvidos.html" style = "color:fffdf6;">Contato</a><i></i>
-          </div>
-      </div>
-  </div> <!-- Fecha container footer -->
+        </footer>
+        <!-- Fecha container footer -->
 </body>
+
 </html>
