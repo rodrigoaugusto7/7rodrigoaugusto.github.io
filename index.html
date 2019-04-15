@@ -28,18 +28,34 @@
 <body>
     <!-- HEADER -->
     <!-- Inicia menu -->
+    <!-- Image and text -->
 
+    <header class="blog-header py-3">
+        <div class="row flex-nowrap justify-content-between align-items-center">
+            <div class="col-4 pt-1">
+            </div>
+            <div class="col-4 text-center">
+                <a class="blog-header-logo text-dark" href="#">Rodrigo Augusto</a><br>
+                <br>
+                <img src="image/rodrigo.jpg" alt="profile" class="bd-placeholder-img rounded-circle" width="150" height="150">
+            </div>
+
+            <div class="col-4 d-flex justify-content-end align-items-center">
+            </div>
+        </div>
+    </header>
+    <!-- 
     <blockquote class="blockquote text-center">
         <h1 style="color:#222831;">Rodrigo Augusto</h1>
         <img src="image/rodrigo.jpg" alt="profile" class="bd-placeholder-img rounded-circle" width="150" height="150">
     </blockquote>
-
+    -->
     <!-- Meio -->
     <div class="ui main text container">
         <br>
 
         <div class="container marketing bg-3 text-center">
-            <h3 class="margin">Quem Sou Eu?</h3>
+            <h3 class="blog-post-title">Quem Sou?</h3>
             <br>
             <!-- Three columns of text below the carousel -->
             <div class="row">
@@ -48,7 +64,7 @@
                 <div class="col-lg-4">
                     <img src="image/educacao.png" alt="profile" class="bd-placeholder-img rounded-circle" width="140" height="140">
 
-                    <h4>Educação</h4>
+                    <h4 class="font-italic">Educação</h4>
                     <ul type="square">
                         <li>2015 – 2016 Graduação Sanduiche Engenharia de Computação - State University of New Paltz - Programa Ciências Sem Fronteiras</li>
                         <li>2012- 2018 Graduado em Engenharia de Computação - Universidade Federal da Paraíba</li>
@@ -59,7 +75,7 @@
                 <!-- /.col-lg-4 -->
                 <div class="col-lg-4">
                     <img src="image/medalha.png" alt="profile" class="bd-placeholder-img rounded-circle" width="140" height="140">
-                    <h4>Experiência</h4>
+                    <h4 class="font-italic">Experiência</h4>
                     <ul type="square">
                         <li>2012 - 2013 Programa "Jovens Talentos", antigo projeto do governo federal com bolsas para a introdução de alunos à pesquisa. Trabalhei com conceitos básicos de análise de redes sociais.</li>
                         <li>2014 - 2015 Professor voluntário de robótica em projeto de preparo de alunos para participação na Robocup 2014 - João Pessoa.</li>
@@ -73,7 +89,7 @@
                 <!-- /.col-lg-4 -->
                 <div class="col-lg-4">
                     <img src="image/idioma.png" alt="profile" class="bd-placeholder-img rounded-circle" width="140" height="140">
-                    <h4>Idiomas</h4>
+                    <h4 class="font-italic">Idiomas</h4>
                     <p>
                         <ul type="square">
                             <li> Inglês</li>
@@ -84,20 +100,27 @@
 
                         </ul>
                     </p>
+                    <h5 class="font-italic">Programação</h5>
+                    <ul type="square">
+                        <li> Python</li>
+                        <li> C</li>
+                        <li> HTML</li>
+                        <li> Assembly</li>
 
+                    </ul>
                 </div>
             </div>
             <!-- Fim container marketing-->
 
             <div class="container marketing bg-2 text-center">
-                <h3 class="margin">Projetos</h3>
+                <h3 class="blog-post-title">Projetos</h3>
                 <br>
                 <!-- Three columns of text below the carousel -->
                 <div class="row">
                     <div class="col-lg-6">
                         <img src="image/genero.jpg" alt="profile" class="bd-placeholder-img rounded-circle" width="140" height="140">
 
-                        <h4>Projeto Gênero Centro de Informática - UFPB</h4>
+                        <h4 class="font-italic">Gênero Centro de Informática - UFPB</h4>
                         <p>Problemas relacionados a gênero afetam instituições que são base para a sociedade, como universidades e empresas. Pensando nisso e tendo em vista a importância da universidade como modelo social, são apresentadas aqui visualizações interativas para demonstrar a desigualdade de gênero dentro dos cursos do Centro de Informática (CI) na Universidade Federal da Paraíba (UFPB).
                         </p>
                         <p><a class="btn btn-secondary" href="https://7rodrigoaugusto.github.io/generoUFPB/" role="button">Detalhes &raquo;</a></p>
@@ -112,7 +135,7 @@
                         <text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
                     </svg>
                     -->
-                        <h4>Eleições 2018 - João Pessoa</h4>
+                        <h4 class="font-italic">Eleições 2018 - João Pessoa</h4>
                         <p>Mapa com a distribuição de votos, por bairro, na cidade de João Pessoa.</p>
                         <p><a class="btn btn-secondary" href="https://public.tableau.com/profile/rodrigo4986#!/vizhome/EleiesJooPessoa/EleiesJP" role="button">Detalhes &raquo;</a></p>
                     </div>
@@ -128,7 +151,8 @@
         <!-- Fecha container principal -->
 
         <!-- FOOTER -->
-        <footer class="container-fluid bg-3 text-center">
+        <footer class="container-fluid  bg-3 text-center">
+            <br>
             <h3 class="margin">Contato</h3> Rodrigo Augusto Vasconcelos Sarmento
             <br>
             <svg id="i-location" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
@@ -152,6 +176,13 @@
                     <path stroke-width="0" fill="currentColor" d="M32 0 C14 0 0 14 0 32 0 53 19 62 22 62 24 62 24 61 24 60 L24 55 C17 57 14 53 13 50 13 50 13 49 11 47 10 46 6 44 10 44 13 44 15 48 15 48 18 52 22 51 24 50 24 48 26 46 26 46 18 45 12 42 12 31 12 27 13 24 15 22 15 22 13 18 15 13 15 13 20 13 24 17 27 15 37 15 40 17 44 13 49 13 49 13 51 20 49 22 49 22 51 24 52 27 52 31 52 42 45 45 38 46 39 47 40 49 40 52 L40 60 C40 61 40 62 42 62 45 62 64 53 64 32 64 14 50 0 32 0 Z" />
                 </svg>
             </a>
+            <a href="RodrigoSarmento.pdf" download>
+                <svg id="i-download" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                    <path d="M9 22 C0 23 1 12 9 13 6 2 23 2 22 10 32 7 32 23 23 22 M11 26 L16 30 21 26 M16 16 L16 30" />
+                </svg>
+            </a>
+            <br>
+            <br>
 
         </footer>
         <!-- Fecha container footer -->
