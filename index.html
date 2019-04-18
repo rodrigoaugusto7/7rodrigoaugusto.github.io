@@ -19,6 +19,15 @@
     <script src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
     <script src="lib/tableau.js"></script>
 
+
+    <!--- Scritp de clique na barra -->
+    <script>
+    var shiftWindow = function() { scrollBy(0, -150) };
+    window.addEventListener("hashchange", shiftWindow);
+    function load() { if (window.location.hash) shiftWindow(); }
+    </script>
+    <script src="lib/site.js"></script>
+
     <!--- JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
@@ -26,7 +35,7 @@
 
 </head>
 
-<body>
+<body onload="load()">
     <!-- Navbar -->
 
     <!--<img src="image/logo 2.png" alt="profile" class="bd-placeholder-img" width="100%" height="180">-->
@@ -40,12 +49,14 @@
         <div class="navigation">
             <a class="py-2" href="#">
             </a>
-            <a class="py-2 text-white" href="#educacao" >Educação</a>
-            <a class="py-2 text-white" href="#experiencia" >Experiência</a>
-            <a class="py-2 text-white" href="#idiomas" >Idiomas</a>
-            <a class="py-2 text-white" href="#projetos" >Projetos</a>
-            <a class="py-2 text-white" href="#chao" >Contato</a>
+            <a class="btn text-white" href="#educacao" >Educação</a>
+            <a class="btn text-white" href="#experiencia" >Experiência</a>
+            <a class="btn text-white" href="#idiomas" >Idiomas</a>
+            <a class="btn text-white" href="#projetos" >Projetos</a>
+            <a class="btn text-white" href="#chao" >Contato</a>
+            
         </div>
+        
     </nav>
 
     <!-- Meio -->
@@ -137,7 +148,7 @@
     <!-- Fecha container principal -->
 
     <!-- FOOTER -->
-    <footer id="chao" class="blog-footer">
+    <footer class="blog-footer">
         <br>
         <h3 class="blog-post-title">Contato</h3> Rodrigo Augusto Vasconcelos Sarmento
         <br>
@@ -169,6 +180,7 @@
         </a>
         <br>
         <br>
+        <div id="chao"></div>
 
     </footer>
     <!-- Fecha container footer -->
