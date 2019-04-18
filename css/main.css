@@ -58,6 +58,23 @@ h1, h2, h3, h4, h5, h6 {
   /* Deixa um espaço entre os itens */
   justify-content: space-around;
 }
+/* Tela Média */
+@media all and (max-width: 800px) {
+  .navigation {
+    /* Quando em tela média, centraliza e distribui igualmente o espaço vazio entre os itens */
+    justify-content: space-around;
+  }
+}
+
+/* Tela Pequena */
+@media all and (max-width: 500px) {
+  .navigation {
+    /* Em tela pequena centraliza o texto e transforma a linha em uma coluna 
+    justify-content: space-around;
+    display: inline-block;*/
+    display: none;
+  }
+}
 
 .logo{
   right:50%;
@@ -71,7 +88,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Tela Média */
 @media all and (max-width: 800px) {
-  .navigation {
+  .logo{
     /* Quando em tela média, centraliza e distribui igualmente o espaço vazio entre os itens */
     justify-content: space-around;
   }
@@ -79,10 +96,8 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Tela Pequena */
 @media all and (max-width: 500px) {
-  .navigation {
+  .logo {
     /* Em tela pequena centraliza o texto e transforma a linha em uma coluna */
-    flex-direction: column;
-    text-align: center;
   }
 }
 
